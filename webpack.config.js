@@ -48,12 +48,12 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      FIREBASE_API_KEY: JSON.stringify(env.parsed.FIREBASE_API_KEY),
-      FIREBASE_AUTH_DOMAIN: JSON.stringify(env.parsed.FIREBASE_AUTH_DOMAIN),
-      FIREBASE_DATABASE_URL: JSON.stringify(env.parsed.FIREBASE_DATABASE_URL),
-      FIREBASE_PROJECT_ID: JSON.stringify(env.parsed.FIREBASE_PROJECT_ID),
-      FIREBASE_MESSAGING_SENDER_ID: JSON.stringify(env.parsed.FIREBASE_MESSAGING_SENDER_ID),
-      FIREBASE_APP_ID: JSON.stringify(env.parsed.FIREBASE_APP_ID),
+      FIREBASE_API_KEY: 'AIzaSyAmMDz-7J_SIwLUGQL2Oop-8OqZj4eKH3Y',
+      FIREBASE_AUTH_DOMAIN: 'my-library-b9f46.firebaseapp.com',
+      FIREBASE_DATABASE_URL: 'https://my-library-b9f46.firebaseio.com',
+      FIREBASE_PROJECT_ID: 'my-library-b9f46',
+      FIREBASE_MESSAGING_SENDER_ID: '208141979583',
+      FIREBASE_APP_ID: '1:208141979583:web:0fbe4d314430e6b8',
     }),
   ],
   devServer: {
