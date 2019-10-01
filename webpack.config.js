@@ -46,16 +46,6 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json'],
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      FIREBASE_API_KEY: JSON.stringify(env.parsed.FIREBASE_API_KEY),
-      FIREBASE_AUTH_DOMAIN: JSON.stringify(env.parsed.FIREBASE_AUTH_DOMAIN),
-      FIREBASE_DATABASE_URL: JSON.stringify(env.parsed.FIREBASE_DATABASE_URL),
-      FIREBASE_PROJECT_ID: JSON.stringify(env.parsed.FIREBASE_PROJECT_ID),
-      FIREBASE_MESSAGING_SENDER_ID: JSON.stringify(env.parsed.FIREBASE_MESSAGING_SENDER_ID),
-      FIREBASE_APP_ID: JSON.stringify(env.parsed.FIREBASE_APP_ID),
-    }),
-  ],
   devServer: {
     historyApiFallback: true,
     noInfo: true,
